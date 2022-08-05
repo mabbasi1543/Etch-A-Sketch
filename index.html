@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Etch-A-Sketch</title>
+</head>
+<body>
+    <sidebar>
+        <h1> Etch-A-Sketch</h1>
+        <div>
+        <p>Color</p>
+        <input type="color" id="color" name="color"
+        value="#ffa500">
+    </div>
+        <div class="sizeContainer">
+            <p id="sizeText"></p>
+            <input type="range" min="1" max="256" value="64" class="sliderSize" id="sliderSize">
+          </div>
+          <div>
+          <p id="sizeText">Toggle fade</p>
+          <button id="fade">true</button>
+        </div>
+
+          <div>
+          <select name="options" id="options">
+            <option value="drag">Click per pixel</option>
+            <option value="hover">hover</option>
+          </select>
+          <button id="optionsButton">select option</button>
+        </div>
+        <button id="reset">reset</button>
+    </sidebar>
+    <div id="grid">
+
+    </div>
+
+</body>
+</html>
